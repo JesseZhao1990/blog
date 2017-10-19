@@ -1,3 +1,7 @@
+##浅比较
+
+react中控制更新的时候可以使用
+
 ```
   module.exports = shallow
 
