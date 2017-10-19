@@ -32,7 +32,7 @@ nvm(node version manager)，node版本管理工具
 ```
 ### 避坑指南
 
-由于安装的时候没有把官方文档看一遍，发现装完之后，node 和npm 都没法使用了。最后才发现是卸载node的时候没卸载干净，一定要仔细阅读下面这段。
+#### 1.由于安装的时候没有把官方文档看一遍，发现装完之后，node 和npm 都没法使用了。最后才发现是卸载node的时候没卸载干净，一定要仔细阅读下面这段。
 
 It comes with an installer (and uninstaller), because getting it should be easy. Please note, you need to uninstall any existing versions of node.js before installing NVM for Windows. Also delete any existing nodejs installation directories (e.g., "C:\Program Files\nodejs") that might remain. NVM's generated symlink will not overwrite an existing (even empty) installation directory.
 
@@ -41,6 +41,7 @@ You should also delete the existing npm install location (e.g. "C:\Users<user>\A
 ```
 nvm use 4.4.0 npm install gulp-cli -g nvm use 0.10.33 npm install gulp-cli -g
 ```
+#### 2. 设置代理
 
 #### 总结一下
 就是在卸载node之后，安装nvm之前，一定要把下面这两个文件夹清空
