@@ -42,6 +42,8 @@ You should also delete the existing npm install location (e.g. "C:\Users<user>\A
 nvm use 4.4.0 npm install gulp-cli -g nvm use 0.10.33 npm install gulp-cli -g
 ```
 
-总结一下就是在卸载node之后，安装nvm之前，一定要把下面这两个文件夹清空
-1.C:\Program Files\nodejs
-2.C:\Users<user>\AppData\Roaming\npm
+#### 总结一下
+就是在卸载node之后，安装nvm之前，一定要把下面这两个文件夹清空
+
+* 1.C:\Program Files\nodejs
+* 2.C:\Users<user>\AppData\Roaming\npm
