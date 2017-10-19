@@ -1,5 +1,5 @@
-## nvm  node version manager，node版本管理工具
-
+## nvm  
+nvm(node version manager)，node版本管理工具
 在windows上的实践
 
 ### 安装
