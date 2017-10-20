@@ -43,8 +43,25 @@ nvm use 4.4.0 npm install gulp-cli -g nvm use 0.10.33 npm install gulp-cli -g
 ```
 #### 2. 设置代理
 
+安装完之后，node能正常使用，但是npm确不能正常使用，郁闷了半天。最后发现是npm被墙，没装成功。按说没装成功，应该提示一下嘛，但是没提示，所以对中国的用户来说，这里是一个坑。设置代理之后，问题解决
+设置代理的方法有两种：
+1. 直接用命令
+```
+  nvm node_mirror <node_mirror_url>: Set the node mirror.People in China can use https://npm.taobao.org/mirrors/node/
+  nvm npm_mirror <npm_mirror_url>: Set the npm mirror.People in China can use https://npm.taobao.org/mirrors/npm/
+```
+2.改配置文件
+C:\Users<user>\AppData\Roaming\nvm\setting.txt  在文件末尾添加两行
+```
+  node_mirror: https://npm.taobao.org/mirrors/node/
+  npm_mirror: https://npm.taobao.org/mirrors/npm/
+```
+
+
 #### 总结一下
 就是在卸载node之后，安装nvm之前，一定要把下面这两个文件夹清空
 
 * 1.C:\Program Files\nodejs
 * 2.C:\Users<user>\AppData\Roaming\npm
+
+如果node 或者npm不能使用，考虑设置代理
