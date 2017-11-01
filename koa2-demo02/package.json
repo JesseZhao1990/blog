@@ -1,0 +1,21 @@
+{
+  "name": "koa2-demo",
+  "version": "1.0.0",
+  "description": "koa hello word process",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "zhaojianxin",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.10.0",
+    "koa": "^2.0.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.2.1"
+  }
+}
