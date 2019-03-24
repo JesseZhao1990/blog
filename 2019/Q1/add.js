@@ -1,4 +1,11 @@
-// 柯里化
+/**
+ * 柯里化
+ * 
+ * 柯里化的作用
+ * 1. 参数复用
+ * 2. 提前返回
+ * 3. 延迟执行
+ */
 
 
 function add(...arg){
@@ -21,5 +28,3 @@ console.log(add(1))
 console.log(add(1)(2)(3))
 console.log(add(1)(2)(3)(4))
 console.log(add(1)(2)(3,4,5,6)(7)(8,9,10))
-
-
